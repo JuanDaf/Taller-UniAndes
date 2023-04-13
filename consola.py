@@ -5,7 +5,7 @@ import modulo as md
 def ejecutar_dar_clase_numero()->None:
     """Esta funcion permite ejecutar la función dar_clase_numero"""
     
-    md.dar_clase_numero(int(input("Ingresa el numero: ")))  
+    print(md.dar_clase_numero(int(input("Ingresa el numero: "))) ) 
     
 def ejecutar_PUM()->None:
     """Esta funcion permite ejecutar el juego del PUM  """
@@ -15,7 +15,7 @@ def ejecutar_PUM()->None:
 def ejecutar_adivinar_numero()->None: 
     """Esta funcion permite ejecutar la función que haya programado para adivinar un numero de 1 a 9. """
     
-    md.adivinar_numero(int(input("Ingresa el numero: ")))
+    print(md.adivinar_numero(int(input("Ingresa el numero: "))))
     
 
 def mostrar_menu()->bool:

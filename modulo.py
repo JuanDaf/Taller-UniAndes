@@ -95,4 +95,4 @@ def adivinar_numero(numero:int)->str:
             numero= int(input("Ingrese un nuevo numero "))    
     return numero_ingresado
 
-print(adivinar_numero(1))
+##print(adivinar_numero(1))
