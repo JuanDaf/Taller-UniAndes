@@ -72,7 +72,7 @@ def jugar_PUM(jugadores: int, numero: int)-> None:
             jugad = 0
 
 
-print(jugar_PUM(5,9))
+##print(jugar_PUM(5,9))
 
 def adivinar_numero(numero:int)->str:
     """ Esta función permite adivinar un numero entre 1 y 9.
@@ -85,7 +85,6 @@ def adivinar_numero(numero:int)->str:
         dado mendiante la funcion random.randint)
     """
     numero_generado= random.randint(1, 9)
-    print(numero_generado)
     centinela=False
     while centinela==False:
         if numero_generado==numero:
@@ -96,4 +95,4 @@ def adivinar_numero(numero:int)->str:
             numero= int(input("Ingrese un nuevo numero "))    
     return numero_ingresado
 
-##print(adivinar_numero(1))
+print(adivinar_numero(1))

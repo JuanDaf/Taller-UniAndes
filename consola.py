@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
 
-#TODO: importar el módulo
+import modulo as md
 
 def ejecutar_dar_clase_numero()->None:
     """Esta funcion permite ejecutar la función dar_clase_numero"""
     
-    # TODO: implementar la función """  
+    md.dar_clase_numero(int(input("Ingresa el numero: ")))  
     
 def ejecutar_PUM()->None:
     """Esta funcion permite ejecutar el juego del PUM  """
     
-    # TODO: implementar la función """  
+    md.jugar_PUM(int(input("Ingresa el numero de jugadores: ")), int(input("Ingresa el numero escogido para el PUM: ")))  
     
 def ejecutar_adivinar_numero()->None: 
     """Esta funcion permite ejecutar la función que haya programado para adivinar un numero de 1 a 9. """
     
-    # TODO: implementar la función """
+    md.adivinar_numero(int(input("Ingresa el numero: ")))
     
 
 def mostrar_menu()->bool:
@@ -29,11 +29,11 @@ def mostrar_menu()->bool:
     continuar_ejecutando = True
 
     if opcion_elegida == "1":
-        print("opc1")
+        ejecutar_dar_clase_numero()
     elif opcion_elegida == "2":
-        print("opc2")
+        ejecutar_PUM()
     elif opcion_elegida == "3":
-        print("opc3")
+        ejecutar_adivinar_numero()
     elif opcion_elegida == "4":
         continuar_ejecutando = False
     else:
