@@ -64,10 +64,10 @@ def jugar_PUM(jugadores: int, numero: int)-> None:
                temp = 1         
         mult = 0
         if(temp == 1):
-            print("Jugador: ",jugad, "Jugada: ", x )
+            temp = 0
         else:
             print("Jugador: ",jugad, "Jugada: ", x )
-            temp = 0
+            
         if(jugad == jugadores):
             jugad = 0
 
